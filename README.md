@@ -29,8 +29,8 @@ the attributes get set through the injected helpers only.
 ## Requirements
 
  * node: >=22
- * [@chubbyts/chubbyts-dic-config-factory][5]: ^1.0.1
- * [@chubbyts/chubbyts-dic-types][3]: ^2.3.1
+ * [@chubbyts/chubbyts-dic-config-factory][5]: ^1.1.0
+ * [@chubbyts/chubbyts-dic-types][3]: ^2.4.0
  * [@chubbyts/chubbyts-http-types][2]: ^4.0.0
 
 ## Installation
@@ -38,7 +38,7 @@ the attributes get set through the injected helpers only.
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-http-trusted-proxy][1].
 
 ```ts
-npm i @chubbyts/chubbyts-http-trusted-proxy@^1.0.0
+npm i @chubbyts/chubbyts-http-trusted-proxy@^1.1.0
 ```
 
 ## Usage
@@ -190,8 +190,8 @@ createForwardedResolver(serverRequestHelpers, ['10.0.0.0/8'], { for: 'x-real-ip'
 The package ships service factories (abstract factories built on [chubbyts-dic-config-factory][5]) for a [chubbyts-dic-config][4] (or any [chubbyts-dic-types][3] compatible) container within `@chubbyts/chubbyts-http-trusted-proxy/service-factory`, configured through `config.chubbyts.trustedProxy`. The implementation of the types gets read from the service `serverRequestHelpers`, which has to be registered:
 
 ```ts
-import type { ConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
-import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
+import type { ConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
+import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
 import { createServerRequestHelpers } from '@chubbyts/chubbyts-http/message-helper';
 import type { TrustedProxyAttributes } from '@chubbyts/chubbyts-http-trusted-proxy/middleware';
 import type { TrustedProxyConfig } from '@chubbyts/chubbyts-http-trusted-proxy/service-factory';

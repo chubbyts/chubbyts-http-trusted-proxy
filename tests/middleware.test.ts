@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
-import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/dist/function-mock';
-import { useObjectMock } from '@chubbyts/chubbyts-function-mock/dist/object-mock';
+import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/function-mock';
+import { useObjectMock } from '@chubbyts/chubbyts-function-mock/object-mock';
 import { createServerRequestFactory } from '@chubbyts/chubbyts-http/message-factory';
 import { createServerRequestHelpers } from '@chubbyts/chubbyts-http/message-helper';
 import type { Handler } from '@chubbyts/chubbyts-http-types/handler';

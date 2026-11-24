@@ -38,7 +38,7 @@ the attributes get set through the injected helpers only.
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-http-trusted-proxy][1].
 
 ```ts
-npm i @chubbyts/chubbyts-http-trusted-proxy@^1.1.0
+npm i @chubbyts/chubbyts-http-trusted-proxy@^1.1.1
 ```
 
 ## Usage
